@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JUnitTestLogger" Version="1.1.0" />
+    <PackageReference Include="Google.Cloud.Functions.Testing" Version="1.0.0" />
+    <PackageReference Include="Google.Events.Protobuf" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelloPubSubFSharp\HelloPubSubFSharp.fsproj" />
+    <ProjectReference Include="..\HelloPubSubVb\HelloPubSubVb.vbproj" />
+    <ProjectReference Include="..\HelloGcs\HelloGcs.csproj" />
+    <ProjectReference Include="..\HelloHttp\HelloHttp.csproj" />
+    <ProjectReference Include="..\HelloPubSub\HelloPubSub.csproj" />
+    <ProjectReference Include="..\HelloWorldFSharp\HelloWorldFSharp.fsproj" />
+    <ProjectReference Include="..\HelloWorldVb\HelloWorldVb.vbproj" />
+    <ProjectReference Include="..\HelloWorld\HelloWorld.csproj" />
+  </ItemGroup>
+
+</Project>
